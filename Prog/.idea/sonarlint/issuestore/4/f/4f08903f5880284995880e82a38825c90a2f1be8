@@ -1,0 +1,20 @@
+
+7
+java:S1220""Move this file to a named package.8ÖÈÈå´1
+]	java:S125"<This block of commented-out lines of code should be removed.(Õ¼Äùÿÿÿÿ8æÈÈå´1
+j	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›ê¨²8æÈÈå´1
+G	java:S106"+Replace this use of System.out by a logger.(ô÷ë¯8æÈÈå´1
+o	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–¿š•úÿÿÿÿ8õÈÈå´1
+^
+java:S1659"ADeclare "num2" and all following declarations on a separate line.(²°âó8õÈÈå´1
+F	java:S106"+Replace this use of System.out by a logger.(‰ê°8õÈÈå´1
+L	java:S106"+Replace this use of System.out by a logger.(öàÃÇÿÿÿÿÿ8õÈÈå´1
+L	java:S106""+Replace this use of System.out by a logger.(ÄŒã¼üÿÿÿÿ8õÈÈå´1
+j	java:S100%"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Í·ä8õÈÈå´1
+F	java:S106)"+Replace this use of System.out by a logger.(Éû@8õÈÈå´1
+F	java:S106,"+Replace this use of System.out by a logger.(ø¦Ş,8õÈÈå´1
+o	java:S100/"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³ÉÛ®ıÿÿÿÿ8õÈÈå´1
+L	java:S1064"+Replace this use of System.out by a logger.(öéĞııÿÿÿÿ8õÈÈå´1
+G	java:S1065"+Replace this use of System.out by a logger.(Ø—¶Æ8õÈÈå´1
+o	java:S1008"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(şÙ“àÿÿÿÿÿ8õÈÈå´1
+L	java:S106>"+Replace this use of System.out by a logger.(í Âõøÿÿÿÿ8õÈÈå´1

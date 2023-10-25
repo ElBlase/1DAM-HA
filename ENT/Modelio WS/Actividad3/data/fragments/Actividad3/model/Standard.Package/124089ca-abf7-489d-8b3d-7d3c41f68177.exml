@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="actividad3" version="4">
+  <OBJECT>
+    <ID name="actividad3" mc="Standard.Package" uid="124089ca-abf7-489d-8b3d-7d3c41f68177"/>
+    <PID name="Actividad3" mc="Standard.Project" uid="e78f0a6a-755a-44c9-bbda-0aa5b596e26d"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[actividad3]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Activity" mc="Standard.Activity" uid="02d0579b-81b5-4b92-b560-fbe019b807aa"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

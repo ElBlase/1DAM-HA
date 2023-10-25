@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="activad5" version="4">
+  <OBJECT>
+    <ID name="activad5" mc="Standard.Package" uid="519c9910-f8bd-49e9-afc9-4e21a3b212d0"/>
+    <PID name="Activad5" mc="Standard.Project" uid="8c3d91da-978e-4d21-8f24-55d9a26030ff"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[activad5]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Activity" mc="Standard.Activity" uid="9f76a2ba-be49-495c-81ed-ce61ebb66012"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

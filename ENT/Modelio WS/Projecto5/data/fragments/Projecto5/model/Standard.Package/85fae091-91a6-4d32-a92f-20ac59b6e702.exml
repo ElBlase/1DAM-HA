@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="projecto5" version="4">
+  <OBJECT>
+    <ID name="projecto5" mc="Standard.Package" uid="85fae091-91a6-4d32-a92f-20ac59b6e702"/>
+    <PID name="Projecto5" mc="Standard.Project" uid="4f975889-ae35-4775-9246-c6ff60dca5ad"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[projecto5]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Activity" mc="Standard.Activity" uid="bf03b3eb-65ea-47e2-80de-26dff8d74307"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,896 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Activity" version="4">
+  <OBJECT>
+    <ID name="Activity" mc="Standard.Activity" uid="20105a49-6603-4334-9638-d8a868ba2447"/>
+    <PID name="actividad7" mc="Standard.Package" uid="58eedde8-222d-4588-99f2-8268a67e927b"/>
+    <ATTRIBUTES>
+      <ATT name="IsSingleExecution">false</ATT>
+      <ATT name="IsReadOnly">false</ATT>
+      <ATT name="IsReentrant">false</ATT>
+      <ATT name="Name"><![CDATA[Activity]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedGroup">
+        <OBJECT>
+          <ID name="Autor" mc="Standard.ActivityPartition" uid="a3da50fb-5db0-4cf9-bca3-b1cb062326aa"/>
+          <ATTRIBUTES>
+            <ATT name="IsDimension">false</ATT>
+            <ATT name="IsExternal">false</ATT>
+            <ATT name="Name"><![CDATA[Autor]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="ContainedNode">
+              <OBJECT>
+                <ID name="Initial Node" mc="Standard.InitialNode" uid="1ad3c546-c6b3-42aa-815c-00782f300434"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Initial Node]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="e86bfa6f-f5d2-49e4-93be-a7c0272884be"/>
+                      <ATTRIBUTES>
+                        <ATT name="TransformationBehavior"></ATT>
+                        <ATT name="SelectionBehavior"></ATT>
+                        <ATT name="IsMultiCast">false</ATT>
+                        <ATT name="IsMultiReceive">false</ATT>
+                        <ATT name="Effect">ReadFlow</ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ObjectFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Crea borrador" mc="Standard.InstanceNode" uid="c9735258-ee6d-4a71-ae5a-55570eb3d5f2"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Crea borrador" mc="Standard.InstanceNode" uid="c9735258-ee6d-4a71-ae5a-55570eb3d5f2"/>
+                <ATTRIBUTES>
+                  <ATT name="IsControlType">false</ATT>
+                  <ATT name="Ordering">FIFO</ATT>
+                  <ATT name="SelectionBehavior"></ATT>
+                  <ATT name="UpperBound"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[Crea borrador]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Represented">
+                    <REFOBJ>
+                      <ID name="Crea borrador" mc="Standard.BindableInstance" uid="55cb3eab-718c-459d-bca0-fbd3a1b2ac2f"/>
+                    </REFOBJ>
+                  </LINK>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="6cf7a165-824b-4e4c-a7fa-5dab992f18c7"/>
+                      <ATTRIBUTES>
+                        <ATT name="TransformationBehavior"></ATT>
+                        <ATT name="SelectionBehavior"></ATT>
+                        <ATT name="IsMultiCast">false</ATT>
+                        <ATT name="IsMultiReceive">false</ATT>
+                        <ATT name="Effect">ReadFlow</ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ObjectFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Envia al revisor" mc="Standard.OpaqueAction" uid="856b029c-c41a-4d1b-bff0-b28dce409be2"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Envia al revisor" mc="Standard.OpaqueAction" uid="856b029c-c41a-4d1b-bff0-b28dce409be2"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Envia al revisor]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="Standard.ControlFlow" uid="de5d78d8-8a72-461b-82ba-699bc0bed137"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Lee el borrador" mc="Standard.OpaqueAction" uid="02a80b86-dd87-40f0-9312-bf08a7356861"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Recibe la notificacion" mc="Standard.OpaqueAction" uid="b4786df8-0c0a-47a4-986c-2f13830c1efd"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Recibe la notificacion]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="Standard.ControlFlow" uid="f964a2f5-949a-42a1-8096-b32dfff97c3d"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Activity Final Node" mc="Standard.ActivityFinalNode" uid="45524d9a-a948-469b-bb0d-9e9ee71f3ae6"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Realiza los cambios" mc="Standard.OpaqueAction" uid="af6beb54-a295-4d43-b95f-442aae71384c"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Realiza los cambios]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="Standard.ControlFlow" uid="96b79834-db38-415c-b582-210c09170b1f"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Envia al revisor" mc="Standard.OpaqueAction" uid="5f61fd71-0c00-4b6b-a3c5-d989696b770a"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Envia al revisor" mc="Standard.OpaqueAction" uid="5f61fd71-0c00-4b6b-a3c5-d989696b770a"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Envia al revisor]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="Standard.ControlFlow" uid="bacf6640-878d-4f51-9c62-0debc4b09c0a"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Corrige el documento" mc="Standard.OpaqueAction" uid="06c73198-21ed-4d52-9d50-ac76b8acfaf7"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Activity Final Node" mc="Standard.ActivityFinalNode" uid="45524d9a-a948-469b-bb0d-9e9ee71f3ae6"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Activity Final Node]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Revisor" mc="Standard.ActivityPartition" uid="b17ff08f-f509-4354-a981-36681c7177f0"/>
+          <ATTRIBUTES>
+            <ATT name="IsDimension">false</ATT>
+            <ATT name="IsExternal">false</ATT>
+            <ATT name="Name"><![CDATA[Revisor]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="ContainedNode">
+              <OBJECT>
+                <ID name="Lee el borrador" mc="Standard.OpaqueAction" uid="02a80b86-dd87-40f0-9312-bf08a7356861"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Lee el borrador]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="Standard.ControlFlow" uid="39352dd7-1a94-4885-a3ed-381c98ea4f32"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Decision-Merge" mc="Standard.DecisionMergeNode" uid="ff227e43-17ce-4c97-b61b-c6af7769f287"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Decision-Merge" mc="Standard.DecisionMergeNode" uid="ff227e43-17ce-4c97-b61b-c6af7769f287"/>
+                <ATTRIBUTES>
+                  <ATT name="DecisionKind">ExclusiveDecision</ATT>
+                  <ATT name="DecisionInputBehavior"></ATT>
+                  <ATT name="Name"><![CDATA[Decision-Merge]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="Standard.ControlFlow" uid="7ffb5603-79ba-4f7c-9bf7-73fc70fa24b6"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Marca como no interesante" mc="Standard.OpaqueAction" uid="72dd4843-18a4-4734-80d3-4c714a8bb33a"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="Standard.ControlFlow" uid="06e9e392-4653-4a01-95e9-3ef36a831bd3"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Envia editor" mc="Standard.OpaqueAction" uid="4899a85e-ba0a-4c75-af11-6e3ab35402c4"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Envia editor" mc="Standard.OpaqueAction" uid="4899a85e-ba0a-4c75-af11-6e3ab35402c4"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Envia editor]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="Standard.ControlFlow" uid="63da47b3-dee4-4bcd-896b-f2a95a2e1908"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Lee el borrador" mc="Standard.OpaqueAction" uid="ff1676d0-cbc0-4f43-8274-fdcd71827dbc"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Marca como no interesante" mc="Standard.OpaqueAction" uid="72dd4843-18a4-4734-80d3-4c714a8bb33a"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Marca como no interesante]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="Standard.ControlFlow" uid="e04a95c2-c02a-4f4f-8cbc-aaf80e861168"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Notifica y envia al autor" mc="Standard.OpaqueAction" uid="641dff19-1eb3-44fb-a2a7-0b149c323442"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Notifica y envia al autor" mc="Standard.OpaqueAction" uid="641dff19-1eb3-44fb-a2a7-0b149c323442"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Notifica y envia al autor]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="Standard.ControlFlow" uid="dfa8d645-0084-4d02-8785-a492ceaacae9"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Recibe la notificacion" mc="Standard.OpaqueAction" uid="b4786df8-0c0a-47a4-986c-2f13830c1efd"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Decision-Merge1" mc="Standard.DecisionMergeNode" uid="2f0ef5aa-9d4b-46e2-922b-5daf66edeb66"/>
+                <ATTRIBUTES>
+                  <ATT name="DecisionKind">ExclusiveDecision</ATT>
+                  <ATT name="DecisionInputBehavior"></ATT>
+                  <ATT name="Name"><![CDATA[Decision-Merge1]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="Standard.ControlFlow" uid="8746a139-0ef7-4772-9edd-bee74680de96"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Sugiere los cambios y envia al autor el documento" mc="Standard.OpaqueAction" uid="35f2976c-bfa6-4cf9-b860-1b1e89864955"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="Standard.ControlFlow" uid="9b6939ab-2be3-47df-b4e0-974e297da2e8"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Marca como definitivo y se envia a la impresora" mc="Standard.OpaqueAction" uid="0f3f6a19-fd07-4071-8763-a513db8e00fb"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Sugiere los cambios y envia al autor el documento" mc="Standard.OpaqueAction" uid="35f2976c-bfa6-4cf9-b860-1b1e89864955"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Sugiere los cambios y envia al autor el documento]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="Standard.ControlFlow" uid="0486a3d5-4cea-44f2-9a66-2172a7fb7ded"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Realiza los cambios" mc="Standard.OpaqueAction" uid="af6beb54-a295-4d43-b95f-442aae71384c"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Corrige el documento" mc="Standard.OpaqueAction" uid="06c73198-21ed-4d52-9d50-ac76b8acfaf7"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Corrige el documento]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="Standard.ControlFlow" uid="db5564c8-bdd1-4c00-8faa-f25206242c38"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Decision-Merge2" mc="Standard.DecisionMergeNode" uid="21d0eb7f-f580-4f15-80c6-1c861e46ec35"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Decision-Merge2" mc="Standard.DecisionMergeNode" uid="21d0eb7f-f580-4f15-80c6-1c861e46ec35"/>
+                <ATTRIBUTES>
+                  <ATT name="DecisionKind">ExclusiveDecision</ATT>
+                  <ATT name="DecisionInputBehavior"></ATT>
+                  <ATT name="Name"><![CDATA[Decision-Merge2]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="Standard.ControlFlow" uid="c7009055-2aea-4b7e-b9ad-0e26708c7cf2"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Sugiere los cambios y envia al autor el documento" mc="Standard.OpaqueAction" uid="35f2976c-bfa6-4cf9-b860-1b1e89864955"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="Standard.ControlFlow" uid="16c7d50e-9025-40f4-a7e7-ef0a4be33dbe"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Marca como definitivo y se envia a la impresora" mc="Standard.OpaqueAction" uid="0f3f6a19-fd07-4071-8763-a513db8e00fb"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Marca como definitivo y se envia a la impresora" mc="Standard.OpaqueAction" uid="0f3f6a19-fd07-4071-8763-a513db8e00fb"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Marca como definitivo y se envia a la impresora]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="Standard.ControlFlow" uid="8579fcd0-236c-4df8-ae09-47f466563bf6"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Imprime el documento definitivo" mc="Standard.OpaqueAction" uid="96aea782-7f9c-4152-848e-00ee1e7f49ec"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Editor" mc="Standard.ActivityPartition" uid="ee59f968-abfe-43a4-8c9c-c441cc6831d6"/>
+          <ATTRIBUTES>
+            <ATT name="IsDimension">false</ATT>
+            <ATT name="IsExternal">false</ATT>
+            <ATT name="Name"><![CDATA[Editor]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="ContainedNode">
+              <OBJECT>
+                <ID name="Lee el borrador" mc="Standard.OpaqueAction" uid="ff1676d0-cbc0-4f43-8274-fdcd71827dbc"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Lee el borrador]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="Standard.ControlFlow" uid="dc3e9710-fee7-4771-9ecd-b01f1120cbc7"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Decision-Merge" mc="Standard.DecisionMergeNode" uid="af991fbd-6ba3-43f1-92e1-1c2edc2e7458"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="Note" mc="Infrastructure.Note" uid="cd6f826a-3810-4740-b099-ca3a5e83bcad"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[Que es interesante]]></ATT>
+                        <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                        <ATT name="Name"><![CDATA[Note]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Decision-Merge" mc="Standard.DecisionMergeNode" uid="af991fbd-6ba3-43f1-92e1-1c2edc2e7458"/>
+                <ATTRIBUTES>
+                  <ATT name="DecisionKind">ExclusiveDecision</ATT>
+                  <ATT name="DecisionInputBehavior"></ATT>
+                  <ATT name="Name"><![CDATA[Decision-Merge]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="Standard.ControlFlow" uid="732c6cfe-cac8-4df8-bf8a-ab6e677f80dc"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Devulve al revisor" mc="Standard.OpaqueAction" uid="d8a59948-ae4f-465d-83b4-8f594a3715f3"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="aa05f34e-163d-4662-bbe3-4a82aab76412"/>
+                      <ATTRIBUTES>
+                        <ATT name="TransformationBehavior"></ATT>
+                        <ATT name="SelectionBehavior"></ATT>
+                        <ATT name="IsMultiCast">false</ATT>
+                        <ATT name="IsMultiReceive">false</ATT>
+                        <ATT name="Effect">ReadFlow</ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ObjectFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Borrador se convierte a docuemto" mc="Standard.InstanceNode" uid="3771958c-72eb-461d-b8bf-46993ab1615f"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Devulve al revisor" mc="Standard.OpaqueAction" uid="d8a59948-ae4f-465d-83b4-8f594a3715f3"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Devulve al revisor]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="Standard.ControlFlow" uid="0d32a68f-39a1-40ea-987b-234626f9f668"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Notifica y envia al autor" mc="Standard.OpaqueAction" uid="641dff19-1eb3-44fb-a2a7-0b149c323442"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Borrador se convierte a docuemto" mc="Standard.InstanceNode" uid="3771958c-72eb-461d-b8bf-46993ab1615f"/>
+                <ATTRIBUTES>
+                  <ATT name="IsControlType">false</ATT>
+                  <ATT name="Ordering">FIFO</ATT>
+                  <ATT name="SelectionBehavior"></ATT>
+                  <ATT name="UpperBound"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[Borrador se convierte a docuemto]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Represented">
+                    <REFOBJ>
+                      <ID name="Borrador se convierte a docuemto" mc="Standard.BindableInstance" uid="78f4e5b6-20b6-4da0-85d6-984b02aa21a1"/>
+                    </REFOBJ>
+                  </LINK>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="97657644-62a2-41b6-8b90-4a5a02b88507"/>
+                      <ATTRIBUTES>
+                        <ATT name="TransformationBehavior"></ATT>
+                        <ATT name="SelectionBehavior"></ATT>
+                        <ATT name="IsMultiCast">false</ATT>
+                        <ATT name="IsMultiReceive">false</ATT>
+                        <ATT name="Effect">ReadFlow</ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ObjectFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Se envia al revisor" mc="Standard.OpaqueAction" uid="106e29ac-6d50-4c4f-b729-57e7276b2053"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Se envia al revisor" mc="Standard.OpaqueAction" uid="106e29ac-6d50-4c4f-b729-57e7276b2053"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Se envia al revisor]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="Standard.ControlFlow" uid="72088ab3-fafd-4531-8d4a-baa310e0db95"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Decision-Merge1" mc="Standard.DecisionMergeNode" uid="2f0ef5aa-9d4b-46e2-922b-5daf66edeb66"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Impresora" mc="Standard.ActivityPartition" uid="941ceed0-12cf-4896-982e-2efe4dda09dc"/>
+          <ATTRIBUTES>
+            <ATT name="IsDimension">false</ATT>
+            <ATT name="IsExternal">false</ATT>
+            <ATT name="Name"><![CDATA[Impresora]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="ContainedNode">
+              <OBJECT>
+                <ID name="Imprime el documento definitivo" mc="Standard.OpaqueAction" uid="96aea782-7f9c-4152-848e-00ee1e7f49ec"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Imprime el documento definitivo]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="Standard.ControlFlow" uid="fcca8bba-9280-415b-945d-36ffb5a34b99"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Activity Final Node" mc="Standard.ActivityFinalNode" uid="93729945-af66-478a-8058-ed61a2565907"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Activity Final Node" mc="Standard.ActivityFinalNode" uid="93729945-af66-478a-8058-ed61a2565907"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Activity Final Node]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedCollaboration">
+        <OBJECT>
+          <ID name="locals" mc="Standard.Collaboration" uid="b72f121a-0aba-4b91-ad9d-9982f7bbf1df"/>
+          <ATTRIBUTES>
+            <ATT name="IsConcurrent">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[locals]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Declared">
+              <OBJECT>
+                <ID name="Crea borrador" mc="Standard.BindableInstance" uid="55cb3eab-718c-459d-bca0-fbd3a1b2ac2f"/>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[Crea borrador]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Borrador se convierte a docuemto" mc="Standard.BindableInstance" uid="78f4e5b6-20b6-4da0-85d6-984b02aa21a1"/>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[Borrador se convierte a docuemto]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Activity Activity diagram" mc="Standard.ActivityDiagram" uid="cca32942-099d-4653-9645-69c0f0301b2a"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
