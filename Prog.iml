@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/AdiosMundo" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Condicionales" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Deberes" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Ej3-oprel" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Hola Mundo" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Suma" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TipoBoolean" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TipoChar" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TipoDato" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TipoReal" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+  <component name="SonarLintModuleSettings">
+    <option name="uniqueId" value="e25c7559-140e-4e5a-b10f-f4a427964ef7" />
+  </component>
+</module>

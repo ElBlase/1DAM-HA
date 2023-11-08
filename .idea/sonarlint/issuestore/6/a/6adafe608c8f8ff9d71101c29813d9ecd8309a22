@@ -1,0 +1,12 @@
+
+Q	java:S125	"<This block of commented-out lines of code should be removed.(æ¥ÉÓ
+E	java:S106"+Replace this use of System.out by a logger.(´‹¹öşÿÿÿÿ
+E	java:S106("+Replace this use of System.out by a logger.(´‹¹öşÿÿÿÿ
+E	java:S106;"+Replace this use of System.out by a logger.(ôçôºüÿÿÿÿ
+E	java:S106K"+Replace this use of System.out by a logger.(ì—˜Çøÿÿÿÿ
+@	java:S106S"+Replace this use of System.out by a logger.(‘˜ÿÏ
+a
+java:S1659Z"FDeclare "valorLim2" and all following declarations on a separate line.(Êä‰‘úÿÿÿÿ
+@	java:S106\"+Replace this use of System.out by a logger.(ÿú»°
+E	java:S106_"+Replace this use of System.out by a logger.(Ò©óùÿÿÿÿ
+E	java:S106s"+Replace this use of System.out by a logger.(ÑàØõşÿÿÿÿ

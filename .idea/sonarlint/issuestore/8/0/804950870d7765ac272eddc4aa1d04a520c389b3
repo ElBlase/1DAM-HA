@@ -1,0 +1,21 @@
+
+i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(‹²Ñ¢8ã¤É„·1
+_
+java:S1854/"=Remove this useless assignment to local variable "descuento".(Ô‹ã´øÿÿÿÿ8‚¥É„·1
+G
+java:S1659"%Declare "tarjeta" on a separate line.(è¹ëÙıÿÿÿÿ8‚¥É„·1
+I
+java:S1659	"'Declare "descuento" on a separate line.(‚Ñœÿÿÿÿÿ8‚¥É„·1
+G	java:S106"+Replace this use of System.out by a logger.(ÖÅ·•8‚¥É„·1
+L	java:S106"+Replace this use of System.out by a logger.(³Å¼Ìÿÿÿÿÿ8‚¥É„·1
+L	java:S106"+Replace this use of System.out by a logger.(¥¢Šûÿÿÿÿ8‚¥É„·1
+L	java:S106"+Replace this use of System.out by a logger.(ÄÙã€şÿÿÿÿ8‚¥É„·1
+L	java:S106"+Replace this use of System.out by a logger.(ÄÙã€şÿÿÿÿ8‚¥É„·1
+L	java:S106 "+Replace this use of System.out by a logger.(½©’úıÿÿÿÿ8‚¥É„·1
+n
+java:S3457+"Q%n should be used in place of \n to produce the platform-specific line separator.(×éÃÛ8‚¥É„·1
+G	java:S106+"+Replace this use of System.out by a logger.(×éÃÛ8‚¥É„·1
+L	java:S1061"+Replace this use of System.out by a logger.(ââºæıÿÿÿÿ8‚¥É„·1
+n
+java:S3457C"Q%n should be used in place of \n to produce the platform-specific line separator.(×éÃÛ8‚¥É„·1
+G	java:S106C"+Replace this use of System.out by a logger.(×éÃÛ8‚¥É„·1
