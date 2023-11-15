@@ -1,6 +1,5 @@
-import java.sql.SQLOutput;
 import java.util.Scanner;
-import java.util.SortedMap;
+
 
 public class Receta {
 
@@ -9,7 +8,7 @@ public class Receta {
         int zanahoria;
         double coliflor, cebolla, pollo, pinyones, pasas, caldo, curry;
 
-        System.out.println("Ingrese el numero de personas para la receta");
+        System.out.println("Ingrese el numero de personas para la receta: ");
         int persona = sc.nextInt();
 
         if (persona < 1) {

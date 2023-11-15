@@ -1,0 +1,19 @@
+
+V	java:S125"<This block of commented-out lines of code should be removed.(Íû„§úÿÿÿÿ
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•ä Ñúÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(¢äø–ûÿÿÿÿ
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğÄ›õûÿÿÿÿ
+@
+java:S1659"%Declare "numero2" on a separate line.(ÊÛÆ¾øÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(ˆÖìÅÿÿÿÿÿ
+h	java:S100""NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥À©®úÿÿÿÿ
+@	java:S106%"+Replace this use of System.out by a logger.(…Ñ²¨
+c	java:S100)"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ïç£
+E	java:S106-"+Replace this use of System.out by a logger.(´ÇÁûıÿÿÿÿ
+c	java:S1003"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ª©Ì‚
+?
+java:S16595"$Declare "texto2" on a separate line.(şÓ–ıÿÿÿÿ
+E	java:S1069"+Replace this use of System.out by a logger.(Êñ˜Çÿÿÿÿÿ
+@	java:S106;"+Replace this use of System.out by a logger.(ËûÃœ
+I
+java:S1128".Remove this unused import 'java.util.Scanner'.(ÒÜÅ¸úÿÿÿÿ

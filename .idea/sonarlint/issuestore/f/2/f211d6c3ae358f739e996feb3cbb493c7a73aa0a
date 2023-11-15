@@ -1,0 +1,12 @@
+
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(äøÍ¯ûÿÿÿÿ
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•ä Ñúÿÿÿÿ
+@
+java:S1659"%Declare "numero2" on a separate line.(ÊÛÆ¾øÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(è°û†ûÿÿÿÿ
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥À©®úÿÿÿÿ
+A
+java:S1659"&Declare "contador" on a separate line.(¼Úøçøÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(í°³»ûÿÿÿÿ
+c	java:S100!"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ïç£
+E	java:S106'"+Replace this use of System.out by a logger.(ìÓÊ ùÿÿÿÿ

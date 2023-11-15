@@ -1,0 +1,10 @@
+
+_
+java:S1659
+"DDeclare "cebolla" and all following declarations on a separate line.(ùÚ’–üÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(ô³£²şÿÿÿÿ
+E	java:S1060"+Replace this use of System.out by a logger.(“‚¸üùÿÿÿÿ
+J
+java:S1128"/Remove this unused import 'java.sql.SQLOutput'.(ê¤òÃùÿÿÿÿ
+F
+java:S1128"0Remove this unused import 'java.util.SortedMap'.(’ŸÕ

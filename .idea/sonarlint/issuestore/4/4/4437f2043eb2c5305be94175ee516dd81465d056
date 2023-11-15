@@ -1,26 +1,0 @@
-
-V	java:S125"<This block of commented-out lines of code should be removed.(ı„×üÿÿÿÿ
-h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³ÉÛ®ıÿÿÿÿ
-;
-java:S1659"%Declare "gradosK" on a separate line.(ú¯ŸÆ
-E	java:S106"+Replace this use of System.out by a logger.(³§„¬úÿÿÿÿ
-?	java:S106"+Replace this use of System.out by a logger.(“Í²9
-h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æï’úÿÿÿÿ
-\
-java:S1659"ADeclare "peso" and all following declarations on a separate line.(â¬á‘úÿÿÿÿ
-@	java:S106!"+Replace this use of System.out by a logger.(è¬îê
-E	java:S106&"+Replace this use of System.out by a logger.(–ğÇşÿÿÿÿ
-<
-java:S1110)"!Remove these useless parentheses.(§Èƒµúÿÿÿÿ
-@	java:S106+"+Replace this use of System.out by a logger.(ıÿ¤ß
-c	java:S100/"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«ÑÔ™
-?
-java:S16591"$Declare "tiempo" on a separate line.(Ùùªµıÿÿÿÿ
-?	java:S1065"+Replace this use of System.out by a logger.(Éû@
-@	java:S106<"+Replace this use of System.out by a logger.(ÑâüÉ
-E	java:S106C"+Replace this use of System.out by a logger.(™ğ™Éûÿÿÿÿ
-E	java:S106I"+Replace this use of System.out by a logger.(ïíù‹ùÿÿÿÿ
-E	java:S106M"+Replace this use of System.out by a logger.(ïíù‹ùÿÿÿÿ
-E	java:S106O"+Replace this use of System.out by a logger.(ûÃ˜ÿÿÿÿÿ
-E	java:S106R"+Replace this use of System.out by a logger.(º’“ıÿÿÿÿ
-L	java:S106U"+Replace this use of System.out by a logger.(º’“ıÿÿÿÿ8Õœ¸×¶1

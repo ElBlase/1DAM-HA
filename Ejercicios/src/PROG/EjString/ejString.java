@@ -33,10 +33,8 @@ public class ejString {
 
                 numVeces++;
             }
-
         }
         System.out.println(numVeces != 1 ? "La letra " + caracter + "se ha repetido " + numVeces + " veces" : "La letra " + caracter + "se ha repetido " + numVeces + " vez");
-
     }
 
     //Ejercicio 2

@@ -1,0 +1,23 @@
+
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ª‰žšúÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(Ô—Ö£
+E	java:S106"+Replace this use of System.out by a logger.(á÷ª†ýÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(¡–õŒúÿÿÿÿ
+@	java:S106"+Replace this use of System.out by a logger.(ÏãÉº
+E	java:S106"+Replace this use of System.out by a logger.(Ã¢ã©úÿÿÿÿ
+@	java:S106"+Replace this use of System.out by a logger.(Ë¾þ
+@	java:S106"+Replace this use of System.out by a logger.(ºšâ€
+@	java:S106""+Replace this use of System.out by a logger.(Å¹²
+E	java:S106%"+Replace this use of System.out by a logger.(º¢ñ¾úÿÿÿÿ
+Y
+java:S1659-"DDeclare "numero2" and all following declarations on a separate line.(ÊåÇm
+E	java:S1061"+Replace this use of System.out by a logger.(Êûº†øÿÿÿÿ
+@	java:S1064"+Replace this use of System.out by a logger.(Š¦¹
+@	java:S1067"+Replace this use of System.out by a logger.(â“‰Ž
+H
+java:S61267"2Replace this String concatenation with Text block.(â“‰Ž
+@	java:S106D"+Replace this use of System.out by a logger.(Ì›þ
+E	java:S106I"+Replace this use of System.out by a logger.(ŽÇæ—øÿÿÿÿ
+@	java:S106N"+Replace this use of System.out by a logger.(ß‘ë¸
+E	java:S106S"+Replace this use of System.out by a logger.(¿ƒãþüÿÿÿÿ
+E	java:S106V"+Replace this use of System.out by a logger.(©Ãšúÿÿÿÿ

@@ -1,0 +1,12 @@
+
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Øì¡øÿÿÿÿ8è®†˜»1
+D
+java:S2189""Correct this loop's end condition.(¸œ‰ÿÿÿÿÿ8 ¯†˜»1
+L	java:S106
+"+Replace this use of System.out by a logger.(Š¦§şÿÿÿÿ8 ¯†˜»1
+G	java:S106"+Replace this use of System.out by a logger.(×•œ²8 ¯†˜»1
+G	java:S106"+Replace this use of System.out by a logger.(»€’À8 ¯†˜»1
+L	java:S106"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8 ¯†˜»1
+[
+java:S2251"9"j" is decremented and will never reach "stop condition".(¸œ‰ÿÿÿÿÿ8 ¯†˜»1
+J	java:S108")Either remove or fill this block of code.(¸œ‰ÿÿÿÿÿ8 ¯†˜»1

@@ -1,0 +1,29 @@
+
+Q	java:S125"<This block of commented-out lines of code should be removed.(ÌğŸ
+V	java:S125
+"<This block of commented-out lines of code should be removed.(ìæ¦™ÿÿÿÿÿ
+c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰Æı“
+:
+java:S1659"Declare "y" on a separate line.(ãÀˆÿÿÿÿÿ
+@	java:S106"+Replace this use of System.out by a logger.(äÚú²
+@	java:S106"+Replace this use of System.out by a logger.(Ğ³ğ…
+?	java:S106"+Replace this use of System.out by a logger.(—õû
+E	java:S106"+Replace this use of System.out by a logger.(®ØÈ˜şÿÿÿÿ
+c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á„¢ÿ
+8
+java:S1659""Declare "base" on a separate line.(Áùã
+E	java:S106"+Replace this use of System.out by a logger.(€ƒœ€şÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(ßÌñ€ÿÿÿÿÿ
+@	java:S106""+Replace this use of System.out by a logger.(Úã’¥
+h	java:S100%"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨êş¹øÿÿÿÿ
+?
+java:S1659&"$Declare "valor2" on a separate line.(Ø’Ç”ıÿÿÿÿ
+8
+java:S1659'""Declare "num2" on a separate line.(à÷Áµ
+E	java:S1060"+Replace this use of System.out by a logger.(Ä–Óƒøÿÿÿÿ
+h	java:S1003"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼šĞ°ÿÿÿÿÿ
+^
+java:S16594"CDeclare "altura" and all following declarations on a separate line.(“‡ø¦ÿÿÿÿÿ
+E	java:S1067"+Replace this use of System.out by a logger.(—„÷ûÿÿÿÿ
+@	java:S106;"+Replace this use of System.out by a logger.(”ßîš
+E	java:S106@"+Replace this use of System.out by a logger.(½æ¥Ùüÿÿÿÿ

@@ -1,0 +1,33 @@
+
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(şôß
+Q	java:S125	"<This block of commented-out lines of code should be removed.(´‘«
+h
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 31 to the 15 allowed.(Ÿ¥ ü
+E	java:S106"+Replace this use of System.out by a logger.(Û¸Ë‹ıÿÿÿÿ
+Z
+java:S3358"DExtract this nested ternary operation into an independent statement.(Íç½ü
+Z
+java:S3358"DExtract this nested ternary operation into an independent statement.(¼­äğ
+Z
+java:S3358"DExtract this nested ternary operation into an independent statement.(’Ù«„
+_
+java:S3358"DExtract this nested ternary operation into an independent statement.(†éÕöıÿÿÿÿ
+Z
+java:S3358 "DExtract this nested ternary operation into an independent statement.(ÜÃ·
+_
+java:S3358""DExtract this nested ternary operation into an independent statement.(Û—Ïàùÿÿÿÿ
+E	java:S106&"+Replace this use of System.out by a logger.(·ƒê¬ùÿÿÿÿ
+_
+java:S3358&"DExtract this nested ternary operation into an independent statement.(·ƒê¬ùÿÿÿÿ
+m
+java:S3776*"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(ÁÁÖÎüÿÿÿÿ
+@	java:S106/"+Replace this use of System.out by a logger.(§øÌ¸
+_
+java:S33583"DExtract this nested ternary operation into an independent statement.(³Ÿ“Èşÿÿÿÿ
+Z
+java:S33584"DExtract this nested ternary operation into an independent statement.(ì‹µï
+Z
+java:S33585"DExtract this nested ternary operation into an independent statement.(õÈ‰î
+Y
+java:S33586"DExtract this nested ternary operation into an independent statement.(æŸù.
+E	java:S1069"+Replace this use of System.out by a logger.(ŞçÇ„ùÿÿÿÿ

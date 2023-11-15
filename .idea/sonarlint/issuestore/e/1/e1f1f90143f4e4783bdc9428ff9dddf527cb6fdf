@@ -1,0 +1,34 @@
+
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(∑ò‘è
+P	java:S125"<This block of commented-out lines of code should be removed.(ÓŸﬁU
+Q	java:S125
+"<This block of commented-out lines of code should be removed.(»ƒ•á
+@	java:S106"+Replace this use of System.out by a logger.(—Õ´∆
+:
+java:S1659"Declare "i" on a separate line.(ó˚áÖ¸ˇˇˇˇ
+@	java:S106&"+Replace this use of System.out by a logger.(—Õ´∆
+6	java:S131-""Add a default case to this switch.(Ï˙«V
+E	java:S106."+Replace this use of System.out by a logger.(ÿ¥ «ˇˇˇˇˇ
+E	java:S1061"+Replace this use of System.out by a logger.(†ô÷Ÿ˚ˇˇˇˇ
+@	java:S1064"+Replace this use of System.out by a logger.(ÃßΩõ
+?	java:S1067"+Replace this use of System.out by a logger.(Ü¨º$
+E	java:S106:"+Replace this use of System.out by a logger.(‹øÿÊ˛ˇˇˇˇ
+@	java:S106="+Replace this use of System.out by a logger.(€È∑·
+E	java:S106@"+Replace this use of System.out by a logger.(„Ä≠Æ˝ˇˇˇˇ
+@	java:S106C"+Replace this use of System.out by a logger.(ªúÅß
+@	java:S106F"+Replace this use of System.out by a logger.(§™‹∞
+E	java:S106I"+Replace this use of System.out by a logger.(Ãƒ˘’¯ˇˇˇˇ
+?	java:S106L"+Replace this use of System.out by a logger.(ìõÜ<
+@	java:S106O"+Replace this use of System.out by a logger.(‹åÏ¸
+@	java:S106T"+Replace this use of System.out by a logger.(©¸–«
+a
+java:S1659_"FDeclare "resultado" and all following declarations on a separate line.(ø‹π∞¸ˇˇˇˇ
+@	java:S106a"+Replace this use of System.out by a logger.(‹æ¶À
+@	java:S106j"+Replace this use of System.out by a logger.(Öö“ì
+7
+java:S1116l"Remove this empty statement.(ù§‡˙ˇˇˇˇˇ
+E	java:S106q"+Replace this use of System.out by a logger.( √¡‘˝ˇˇˇˇ
+7
+java:S1116s"Remove this empty statement.(ù§‡˙ˇˇˇˇˇ
+E	java:S106y"+Replace this use of System.out by a logger.(¨èûÎ˛ˇˇˇˇ
+E	java:S106{"+Replace this use of System.out by a logger.(óÎˇÚ¸ˇˇˇˇ

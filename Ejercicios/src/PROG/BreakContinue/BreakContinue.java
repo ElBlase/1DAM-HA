@@ -7,10 +7,10 @@ public class BreakContinue {
     public static void main(String[] args) {
 
         //rupturas2En2();
-        //rupturas1En1();
+        rupturas1En1();
         //rupturasInfinito();
         //eco();
-        sumaNumPares();
+        //sumaNumPares();
     }
 
     //Ejercicio 1 (Rupturas 2 en 2)
@@ -37,8 +37,9 @@ public class BreakContinue {
                 continue;
             }
 
-            System.out.println(i);
-
+            if (i % 2 == 0) {
+                System.out.println(i);
+            }
         }
 
     }
@@ -57,10 +58,9 @@ public class BreakContinue {
                 }
 
                 System.out.println(valor);
-
             }
 
-            if (valor == 20) {
+            if (valor > 20) {
                 break;
             }
         }
@@ -77,6 +77,7 @@ public class BreakContinue {
 
             if ("salir".equalsIgnoreCase(txtSolicitado)) {
 
+                System.out.println("El programa ha finalizado");
                 break;
 
             }
@@ -87,7 +88,9 @@ public class BreakContinue {
     //Ejercicio 3 (Suma numeros pares)
     public static void sumaNumPares() {
 
-        int valorLim1, valorLim2, max, min, total = 0, i = 0;
+        int valorLim1, valorLim2, max, min;
+        int total = 0;
+        int i = 0;
 
         System.out.print("Introduzca el primer limite: ");
         valorLim1 = sc.nextInt();
@@ -113,6 +116,5 @@ public class BreakContinue {
         }
 
         System.out.println("La suma de los numeros pares comprendida desde " + min + " hasta " + max + " es " + total);
-
     }
 }

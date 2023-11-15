@@ -56,14 +56,12 @@ public class Autoevaluacion {
         //Comprobar edad
         if (edad >= 18) {
 
-            sc = new Scanner(System.in);
             System.out.println("¿Ha participado anteriormente en otra maratón? (si o no): ");
             participado = sc.nextLine();
 
             //Combrobar participado
             if (participado.equals("si")) {
 
-                sc = new Scanner(System.in);
                 System.out.println("¿En cuanto tiempo termino? Expreselo en minutos: ");
                 tiempo = sc.nextInt();
 
@@ -83,8 +81,5 @@ public class Autoevaluacion {
 
             //No da la edad
         } else System.out.println("No puede participar");
-
     }
-
-
 }
