@@ -65,10 +65,12 @@ public class ExamenEv1 {
 
         int numPersonas, grupos;
         double precioTotal = 0;
+
         final double DESCUENTO = 0.1;
         final int PRECIO_BASE = 8;
         final int PRECIO_ESPECIAL = 5;
         final int PRECIO_PAREJAS = 11;
+
         String diaSemana;
         String tarjeta;
         boolean existe = true;
