@@ -26,6 +26,7 @@
       <sourceFolder url="file://$MODULE_DIR$/ejFiguraGeo" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ejRombo" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Depuracion1" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/olimpiada" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

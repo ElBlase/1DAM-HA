@@ -5,11 +5,11 @@ public class ExamenDAW {
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-//        do {
-//          CadBinaria();
-//        } while (seSale());
+        do {
+            CadBinaria();
+        } while (seSale());
 
-        CalcTasas();
+        // CalcTasas();
     }
 
     //Ejercicio 1 Binario
@@ -66,7 +66,6 @@ public class ExamenDAW {
         if (esBinario) {
             System.out.println("Es una cadena binaria");
         }
-
     }
 
     //Ejercicio 2 calculo tasas
