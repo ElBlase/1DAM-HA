@@ -27,6 +27,8 @@
       <sourceFolder url="file://$MODULE_DIR$/ejRombo" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Depuracion1" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/olimpiada" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/EjArrays" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ejArraysMet" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

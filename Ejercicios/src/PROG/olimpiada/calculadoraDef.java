@@ -93,13 +93,11 @@ public class calculadoraDef {
         if (operacion == 1) {
             for (int i = 0; i < cantNum.length; i++) {
                 resultado = (resultado + cantNum[i]);
-
             }
         } else {
             resultado = cantNum[0];
             for (int i = 1; i < cantNum.length; i++) {
                 resultado = resultado - cantNum[i];
-
             }
         }
         return resultado;
@@ -124,5 +122,4 @@ public class calculadoraDef {
 
         return resultado;
     }
-
 }

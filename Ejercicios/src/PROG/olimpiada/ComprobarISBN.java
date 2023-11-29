@@ -13,6 +13,10 @@ public class ComprobarISBN {
 
         resultado = compISBN(isbnItroducido);
 
+        if (resultado % 11 == 0) {
+            System.out.println("Isb valido");
+        } else System.out.println("Isb no valido");
+
     }
 
     //Calcular el isbn
@@ -20,16 +24,39 @@ public class ComprobarISBN {
         char[] caracteresISBN = new char[isbn.length()];
         int[] valoresISBN = new int[isbn.length()];
         int resultado = 0;
+        int k = 10;
+        boolean tieneLetra = false;
 
         for (int i = 0; i < isbn.length(); i++) {
             caracteresISBN[i] = isbn.charAt(i);
-            valoresISBN[i] = caracteresISBN[i] - '0';
+            if (Character.isDigit(caracteresISBN[i])) {
+                valoresISBN[i] = caracteresISBN[i] - '0';
+            } else {
+                tieneLetra = true;
+            }
         }
-        for (int i = 10; i > 0; i--) {
-            for (int j = 0; j < isbn.length(); j++) {
-                resultado += (i * valoresISBN[j]);
+        resultado = sumatorio(valoresISBN, tieneLetra);
+        return resultado;
+    }
+
+    //Averiguar como es el ibs correcto si hay un ?
+    public static void averiguar(int[] valoresISBN){
+
+    }
+
+    //Sumatorio
+    public static int sumatorio(int[] valoresISBN, boolean tieneLetra){
+        int resultado = 0;
+        int k = 10;
+        for (int j : valoresISBN) {
+            while (k > 0) {
+                resultado += (k * j);
+                k--;
                 break;
             }
+        }
+        if (tieneLetra) {
+            resultado = resultado + 10;
         }
         return resultado;
     }
