@@ -66,6 +66,7 @@ public class ExamenDAW {
         if (esBinario) {
             System.out.println("Es una cadena binaria");
         }
+
     }
 
     //Ejercicio 2 calculo tasas

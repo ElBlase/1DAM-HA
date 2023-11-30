@@ -26,13 +26,16 @@ public class ComprobarISBN {
         int resultado = 0;
         int k = 10;
         boolean tieneLetra = false;
+        boolean tieneInterrogante = false;
 
         for (int i = 0; i < isbn.length(); i++) {
             caracteresISBN[i] = isbn.charAt(i);
             if (Character.isDigit(caracteresISBN[i])) {
                 valoresISBN[i] = caracteresISBN[i] - '0';
-            } else {
+            } else if (caracteresISBN[i] == 'X') {
                 tieneLetra = true;
+            } else {
+                tieneInterrogante = true;
             }
         }
         resultado = sumatorio(valoresISBN, tieneLetra);
@@ -40,12 +43,12 @@ public class ComprobarISBN {
     }
 
     //Averiguar como es el ibs correcto si hay un ?
-    public static void averiguar(int[] valoresISBN){
+    public static void averiguar(int[] valoresISBN) {
 
     }
 
     //Sumatorio
-    public static int sumatorio(int[] valoresISBN, boolean tieneLetra){
+    public static int sumatorio(int[] valoresISBN, boolean tieneLetra) {
         int resultado = 0;
         int k = 10;
         for (int j : valoresISBN) {
